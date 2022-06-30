@@ -17,7 +17,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // User login created
     @IBAction func loginButtonClicked(_ sender: Any) {
+        if e_mailTextField.text != "" && passwordTextField.text != ""{
+            Auth.auth().signIn(withEmail: e_mailTextField.text!, password: passwordTextField.text!) { authdataresult, error in
+                if error != nil{
+                    // Error nil değilse
+                    self.alertMessage(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error , Please try again.")
+                }else{
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                }
+            }
+        }else{
+            self.alertMessage(titleInput: "Error", messageInput: "User e-mail or Password cannot be nil.")
+        }
     }
     
     @IBAction func signupButtonClicked(_ sender: Any) {

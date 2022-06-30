@@ -24,6 +24,7 @@ class ViewController: UIViewController {
                 if error != nil{
                     // Error nil değilse
                     self.alertMessage(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error , Please try again.")
+                    
                 }else{
                     self.performSegue(withIdentifier: "toFeedVC", sender: nil)
                 }

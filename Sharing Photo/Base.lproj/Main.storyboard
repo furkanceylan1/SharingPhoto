@@ -146,7 +146,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="5nm-L9-mtu">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="77f-ML-Tu6" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" modalPresentationStyle="fullScreen" id="77f-ML-Tu6" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="bAF-jm-XYw"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FEs-G0-7jg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

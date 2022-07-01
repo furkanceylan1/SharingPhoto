@@ -71,7 +71,11 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
                                 if error != nil{
                                     self.addAlertMessage(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error , Please try again")
                                 }else{
-                                    self.addAlertMessage(titleInput: "Success", messageInput: error?.localizedDescription ?? "Registration Successful")
+                                    self.imageView.image = UIImage(systemName: "photo.on.rectangle.angled")
+                                    self.commentTextField.text = ""
+                                    self.commentTextField.placeholder = "Comment"
+                                    self.uploadButton.isEnabled = false
+                                    self.tabBarController?.selectedIndex = 0
                                 }
                             }
                         }

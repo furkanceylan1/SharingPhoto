@@ -126,6 +126,7 @@
                     <connections>
                         <outlet property="commentTextField" destination="Mhf-gs-BAd" id="wwt-J5-Al6"/>
                         <outlet property="imageView" destination="t6K-qV-93M" id="ITe-Ff-06Q"/>
+                        <outlet property="uploadButton" destination="V16-LB-UnP" id="Jx5-qL-9M5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vm-2S-Fov" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -62,6 +62,18 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
                     spaceRef.downloadURL { url, error in
                         if error == nil{
                             let imageUrl = url?.absoluteString
+                            
+                            //Database
+                            let db = Firestore.firestore()
+                            
+                            let data = ["image" : imageUrl, "comment" : self.commentTextField.text, "email" : Auth.auth().currentUser?.email, "date" : FieldValue.serverTimestamp()] as [String : Any]
+                            db.collection("Post").addDocument(data: data) { error in
+                                if error != nil{
+                                    self.addAlertMessage(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error , Please try again")
+                                }else{
+                                    self.addAlertMessage(titleInput: "Success", messageInput: error?.localizedDescription ?? "Registration Successful")
+                                }
+                            }
                         }
                     }
                 }

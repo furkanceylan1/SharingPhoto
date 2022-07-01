@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DC0D78B4286F278D00C43AEE /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0D78B3286F278D00C43AEE /* StoryCell.swift */; };
 		DC0D78B7286F457100C43AEE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DC0D78B6286F457100C43AEE /* SDWebImage */; };
+		DC0D78B9286F54E100C43AEE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0D78B8286F54E100C43AEE /* Post.swift */; };
 		DCD0D558286D79B20024557D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0D557286D79B20024557D /* AppDelegate.swift */; };
 		DCD0D55A286D79B20024557D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0D559286D79B20024557D /* SceneDelegate.swift */; };
 		DCD0D55C286D79B20024557D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0D55B286D79B20024557D /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		DC0D78B3286F278D00C43AEE /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		DC0D78B8286F54E100C43AEE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		DCD0D554286D79B20024557D /* Sharing Photo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sharing Photo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD0D557286D79B20024557D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCD0D559286D79B20024557D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				DCD0D576286D87760024557D /* UploadViewController.swift */,
 				DCD0D578286D877F0024557D /* SettingsViewController.swift */,
 				DC0D78B3286F278D00C43AEE /* StoryCell.swift */,
+				DC0D78B8286F54E100C43AEE /* Post.swift */,
 				DCD0D55D286D79B20024557D /* Main.storyboard */,
 				DCD0D560286D79B30024557D /* Assets.xcassets */,
 				DCD0D562286D79B30024557D /* LaunchScreen.storyboard */,
@@ -175,6 +178,7 @@
 				DCD0D575286D876B0024557D /* StoryViewController.swift in Sources */,
 				DCD0D577286D87760024557D /* UploadViewController.swift in Sources */,
 				DCD0D55C286D79B20024557D /* ViewController.swift in Sources */,
+				DC0D78B9286F54E100C43AEE /* Post.swift in Sources */,
 				DC0D78B4286F278D00C43AEE /* StoryCell.swift in Sources */,
 				DCD0D558286D79B20024557D /* AppDelegate.swift in Sources */,
 				DCD0D55A286D79B20024557D /* SceneDelegate.swift in Sources */,

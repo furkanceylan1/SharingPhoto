@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC0D78B4286F278D00C43AEE /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0D78B3286F278D00C43AEE /* StoryCell.swift */; };
+		DC0D78B7286F457100C43AEE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = DC0D78B6286F457100C43AEE /* SDWebImage */; };
 		DCD0D558286D79B20024557D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0D557286D79B20024557D /* AppDelegate.swift */; };
 		DCD0D55A286D79B20024557D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0D559286D79B20024557D /* SceneDelegate.swift */; };
 		DCD0D55C286D79B20024557D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0D55B286D79B20024557D /* ViewController.swift */; };
@@ -23,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC0D78B3286F278D00C43AEE /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
 		DCD0D554286D79B20024557D /* Sharing Photo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sharing Photo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD0D557286D79B20024557D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCD0D559286D79B20024557D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 			files = (
 				DCD0D56F286D7AE80024557D /* FirebaseAuth in Frameworks */,
 				DCD0D571286D7AE80024557D /* FirebaseFirestore in Frameworks */,
+				DC0D78B7286F457100C43AEE /* SDWebImage in Frameworks */,
 				DCD0D573286D7AE80024557D /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +80,7 @@
 				DCD0D574286D876B0024557D /* StoryViewController.swift */,
 				DCD0D576286D87760024557D /* UploadViewController.swift */,
 				DCD0D578286D877F0024557D /* SettingsViewController.swift */,
+				DC0D78B3286F278D00C43AEE /* StoryCell.swift */,
 				DCD0D55D286D79B20024557D /* Main.storyboard */,
 				DCD0D560286D79B30024557D /* Assets.xcassets */,
 				DCD0D562286D79B30024557D /* LaunchScreen.storyboard */,
@@ -105,6 +110,7 @@
 				DCD0D56E286D7AE80024557D /* FirebaseAuth */,
 				DCD0D570286D7AE80024557D /* FirebaseFirestore */,
 				DCD0D572286D7AE80024557D /* FirebaseStorage */,
+				DC0D78B6286F457100C43AEE /* SDWebImage */,
 			);
 			productName = "Sharing Photo";
 			productReference = DCD0D554286D79B20024557D /* Sharing Photo.app */;
@@ -136,6 +142,7 @@
 			mainGroup = DCD0D54B286D79B20024557D;
 			packageReferences = (
 				DCD0D56D286D7AE80024557D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DC0D78B5286F457100C43AEE /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = DCD0D555286D79B20024557D /* Products */;
 			projectDirPath = "";
@@ -168,6 +175,7 @@
 				DCD0D575286D876B0024557D /* StoryViewController.swift in Sources */,
 				DCD0D577286D87760024557D /* UploadViewController.swift in Sources */,
 				DCD0D55C286D79B20024557D /* ViewController.swift in Sources */,
+				DC0D78B4286F278D00C43AEE /* StoryCell.swift in Sources */,
 				DCD0D558286D79B20024557D /* AppDelegate.swift in Sources */,
 				DCD0D55A286D79B20024557D /* SceneDelegate.swift in Sources */,
 				DCD0D579286D877F0024557D /* SettingsViewController.swift in Sources */,
@@ -392,6 +400,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DC0D78B5286F457100C43AEE /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		DCD0D56D286D7AE80024557D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -403,6 +419,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DC0D78B6286F457100C43AEE /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC0D78B5286F457100C43AEE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		DCD0D56E286D7AE80024557D /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DCD0D56D286D7AE80024557D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
